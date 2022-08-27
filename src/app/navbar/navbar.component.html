@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="color">
+  <mat-toolbar-row>
+    <a href=""><img class="logo" src="../assets/logo.svg" alt=""></a>
+
+    <div class="spacer"></div>
+
+    <button mat-button [matMenuTriggerFor]="afterMenu" href="#">Geriavida</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item href="#">Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <a mat-button routerLink="proposito">Propósitos y Valores</a>
+    <a mat-button routerLink="servicios">Servicios</a>
+    <a mat-button href="">Enfermedades</a>
+    <a mat-button routerLink="galeria">Galeria</a>
+    <a mat-button routerLink="contacto">Contacto</a>
+    <a mat-button routerLink="blog">Blog</a>
+    <a mat-raised-button class="color2" href="../../assets/pdf/Brochure.pdf" target="_blank">Brochure</a>
+  </mat-toolbar-row>
+</mat-toolbar>

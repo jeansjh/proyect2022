@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 	0;
+  box-sizing: border-box;
+}
+h1{
+  font-family: 'Colonna MT', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: center;
+  color: #808080;
+}
+p{
+  text-align: center;
+  font: 400 1.5em/2.3rem  'Sorts Mill Goudy', serif!important;
+  margin-bottom: 0px;
+}
+.imagen{
+  text-align: center;
+}
+
+/** Galeria **/
+.container{
+  position: relative;
+  min-height: 100vh;
+}
+.container .contenedorGaleria{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+  justify-content: center;
+  padding: 10px;
+}
+.container .contenedorGaleria .galeria{
+  height: 250px;
+  width: 350px;
+  border: 10px solid #808080;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.container .contenedorGaleria .galeria img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+.container .contenedorGaleria .galeria:hover img{
+  transform: scale(1.1);
+}
+
+/** mostrar imagen **/
+
+
+.container .popup-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.container .popup-image span{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  margin: 2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 50%;
+  height: 90%;
+
+  object-fit: cover;
+}

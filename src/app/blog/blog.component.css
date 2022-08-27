@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 	0;
+  box-sizing: border-box;
+}
+h1{
+  font-family: 'Colonna MT', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: center;
+  color: #808080;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #123B40;
+}
+.example-card {
+  max-width: 400px;
+}
+button{
+  color: #a71117;
+  font-size: 1.5rem;
+}
+.contenedor {
+  margin: 0 auto;
+  text-align: center;
+}
+.contenedor mat-card{
+  margin: 1rem;
+}
